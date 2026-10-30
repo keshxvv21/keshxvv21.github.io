@@ -1,0 +1,41 @@
+/* Pixel logo mark in the nav and footer. */
+
+.brandmark {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-right: 1.5px solid var(--ink);
+  color: var(--ink);
+  transition: background .35s var(--ease),transform .35s var(--ease);
+}
+
+.brandmark:hover {
+  background: var(--yel);
+  color: #121212;
+}
+
+.brandmark:active {
+  transform: scale(.94);
+}
+
+.brandmark svg,
+.flogo svg {
+  display: block;
+}
+
+.flogo {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--ink);
+  transition: transform .4s var(--ease);
+}
+
+.flogo:hover {
+  transform: translateY(-3px) rotate(-3deg);
+}
+
+@media(max-width:760px) {
+  .brandmark {
+    padding: 0 12px;
+  }
+}

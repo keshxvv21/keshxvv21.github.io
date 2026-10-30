@@ -1,0 +1,75 @@
+/* Contact: CV card and message form. */
+
+.lets {
+  text-align: center;
+}
+
+.smile {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.talk {
+  display: grid;
+  gap: 36px;
+  margin-top: 44px;
+  text-align: left;
+}
+
+@media(min-width:900px) {
+  .talk {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.talk .card {
+  max-width: none;
+  margin: 0;
+}
+
+.form {
+  background: var(--pm);
+  transform: rotate(1deg);
+}
+
+.form label {
+  display: block;
+  font: 600 12px var(--sans);
+  margin-bottom: 14px;
+  color: #121212;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font: 400 15px var(--sans);
+  color: #121212;
+  background: #fff;
+  border: 1.5px solid #121212;
+  border-radius: 0;
+  resize: vertical;
+}
+
+.form [aria-invalid="true"] {
+  border-color: #B3261E;
+  background: #fff4f2;
+}
+
+.form .err {
+  display: block;
+  color: #8F1B14;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.fmsg {
+  display: block;
+  margin-top: 14px;
+  font: 600 13px var(--sans);
+  color: #121212;
+  min-height: 1.2em;
+}

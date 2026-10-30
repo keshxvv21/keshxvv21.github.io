@@ -1,0 +1,79 @@
+/* Buttons, text links and the theme toggle. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 22px;
+  font: 600 13px var(--sans);
+  border: 1.5px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--yel);
+  transition: transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+
+.btn:hover {
+  transform: translate(-2px,-2px);
+  box-shadow: 6px 6px 0 var(--yel);
+}
+
+.btn:active {
+  transform: translate(3px,3px);
+  box-shadow: 0 0 0 var(--yel);
+}
+
+.btn.alt {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.go {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
+.go:hover {
+  opacity: .6;
+}
+
+/* Theme toggle (sun/moon) */
+.tbtn {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  margin: 6px 0 6px 6px;
+  border: 1.5px solid var(--ink);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .35s var(--ease),transform .35s var(--ease);
+}
+
+.tbtn:hover {
+  background: var(--yel);
+  color: #121212;
+}
+
+.tbtn:active {
+  transform: scale(.92);
+}
+
+.tbtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.tbtn .su {
+  display: none;
+}
+
+:root[data-theme="dark"] .tbtn .su {
+  display: block;
+}
+
+:root[data-theme="dark"] .tbtn .mo {
+  display: none;
+}

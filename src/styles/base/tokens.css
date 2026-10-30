@@ -1,0 +1,22 @@
+/* Design tokens: colours, fonts, easing. Light theme is the default. */
+
+:root {
+  --ease: cubic-bezier(.22,1,.36,1);
+  --paper: #F0EDE4;
+  --ink: #121212;
+  --yel: #F5C842;
+  --blue: #3A56E8;
+  --pink: #F0488E;
+  --green: #1FB26B;
+  --red: #C33D32;
+  --pb: #BCC8F3;
+  --pc: #F3E4A6;
+  --pm: #BEE3CB;
+  --pp: #F7BBD0;
+  --pix: "Jersey 10","Courier New",monospace;
+  --hand: "Caveat","Comic Sans MS",cursive;
+  --sans: "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --torn: polygon(0 4%,4% 0,9% 3%,15% 0,22% 3%,30% 0,38% 3%,46% 0,55% 3%,63% 0,72% 3%,80% 0,89% 3%,96% 0,100% 4%,100% 96%,95% 100%,88% 97%,79% 100%,70% 97%,61% 100%,52% 97%,43% 100%,34% 97%,25% 100%,16% 97%,8% 100%,0 96%);
+  --card: #fff;
+  --line: rgba(18,18,18,.07);
+}

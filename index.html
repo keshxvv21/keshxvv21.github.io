@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keshav Singh — Full-stack developer &amp; CS student</title>
+  <meta name="description"
+    content="Portfolio of Keshav Singh, a B.Tech CSE student in Surat, India, building web apps, AI tools and space-tech interfaces with Python, Java and the MERN stack.">
+  <link rel="canonical" href="https://keshxvv21.github.io/">
+
+  <!-- Social previews. After you deploy, change https://keshxvv21.github.io/ if your site lives somewhere else. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keshxvv21.github.io/">
+  <meta property="og:title" content="Keshav Singh — Full-stack developer &amp; CS student">
+  <meta property="og:description"
+    content="Web apps, AI tools and space-tech interfaces. B.Tech CSE student in Surat, India.">
+  <meta property="og:image" content="https://keshxvv21.github.io/assets/images/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://keshxvv21.github.io/assets/images/og-preview.png">
+  <meta name="theme-color" content="#F5C842">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Sets the theme before first paint so there is no flash -->
+  <script src="src/scripts/theme-init.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&family=Bricolage+Grotesque:wght@600;700&family=Caveat:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles: tokens and base first, then components, layout, sections, effects -->
+  <link rel="stylesheet" href="src/styles/base/tokens.css">
+  <link rel="stylesheet" href="src/styles/base/theme.css">
+  <link rel="stylesheet" href="src/styles/base/base.css">
+  <link rel="stylesheet" href="src/styles/components/buttons.css">
+  <link rel="stylesheet" href="src/styles/components/tags.css">
+  <link rel="stylesheet" href="src/styles/components/section-head.css">
+  <link rel="stylesheet" href="src/styles/components/stickers.css">
+  <link rel="stylesheet" href="src/styles/components/cards.css">
+  <link rel="stylesheet" href="src/styles/components/logo.css">
+  <link rel="stylesheet" href="src/styles/layout/nav.css">
+  <link rel="stylesheet" href="src/styles/layout/footer.css">
+  <link rel="stylesheet" href="src/styles/sections/hero.css">
+  <link rel="stylesheet" href="src/styles/sections/about.css">
+  <link rel="stylesheet" href="src/styles/sections/projects.css">
+  <link rel="stylesheet" href="src/styles/sections/skills.css">
+  <link rel="stylesheet" href="src/styles/sections/experience.css">
+  <link rel="stylesheet" href="src/styles/sections/contact.css">
+  <link rel="stylesheet" href="src/styles/effects/reveal.css">
+  <link rel="stylesheet" href="src/styles/effects/dividers.css">
+  <link rel="stylesheet" href="src/styles/effects/playground.css">
+  <link rel="stylesheet" href="src/styles/effects/animations.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.42.36.78 1.08.78 2.18v3.24c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+        stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="M3 7l9 6 9-6" />
+      </symbol>
+      <symbol id="i-resume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+        stroke-linejoin="round">
+        <path d="M14 3v5h5M6 3h8l5 5v13H6zM9 13h6M9 17h6" />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+        stroke-linejoin="round">
+        <path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+        stroke-linecap="round">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+      </symbol>
+      <symbol id="i-logo" viewBox="0 0 184 107" fill="currentColor" shape-rendering="crispEdges">
+        <rect x="0" y="0" width="27" height="20" />
+        <rect x="70" y="0" width="24" height="20" />
+        <rect x="99" y="0" width="85" height="20" />
+        <rect x="0" y="20" width="27" height="1" />
+        <rect x="47" y="20" width="23" height="1" />
+        <rect x="99" y="20" width="49" height="1" />
+        <rect x="0" y="21" width="27" height="20" />
+        <rect x="47" y="21" width="23" height="20" />
+        <rect x="99" y="21" width="22" height="20" />
+        <rect x="0" y="41" width="47" height="1" />
+        <rect x="99" y="41" width="22" height="1" />
+        <rect x="0" y="42" width="47" height="1" />
+        <rect x="99" y="42" width="71" height="1" />
+        <rect x="0" y="43" width="47" height="19" />
+        <rect x="99" y="43" width="72" height="19" />
+        <rect x="0" y="62" width="47" height="1" />
+        <rect x="99" y="62" width="73" height="1" />
+        <rect x="0" y="63" width="27" height="22" />
+        <rect x="47" y="63" width="24" height="22" />
+        <rect x="157" y="63" width="27" height="22" />
+        <rect x="0" y="85" width="27" height="1" />
+        <rect x="70" y="85" width="24" height="1" />
+        <rect x="99" y="85" width="85" height="1" />
+        <rect x="0" y="86" width="27" height="21" />
+        <rect x="71" y="86" width="23" height="21" />
+        <rect x="99" y="86" width="85" height="21" />
+      </symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="top" aria-label="Main">
+    <a class="brandmark" href="#home" aria-label="Keshav Singh, home"><svg viewBox="0 0 184 107" width="38" height="22">
+        <use href="#i-logo" />
+      </svg></a>
+    <a class="l" href="#projects" data-nav>Projects</a>
+    <a class="l" href="#skills" data-nav>Skills</a>
+    <a class="l" href="#experience" data-nav>Experience</a>
+    <a class="l" href="#cv" data-nav>CV</a>
+    <div class="sp"></div>
+    <div class="dots"><a href="https://github.com/keshxvv21" target="_blank" rel="noopener" aria-label="GitHub"
+        title="GitHub" style="--c:var(--yel)"><svg>
+          <use href="#i-github" />
+        </svg></a><a href="https://www.linkedin.com/in/keshavsingh17/" target="_blank" rel="noopener"
+        aria-label="LinkedIn" title="LinkedIn" style="--c:var(--pink)"><svg>
+          <use href="#i-linkedin" />
+        </svg></a><a href="mailto:keshavsingh6495@gmail.com" aria-label="Email" title="Email"
+        style="--c:var(--green)"><svg>
+          <use href="#i-mail" />
+        </svg></a><a href="assets/cv/Keshav-Singh-CV.pdf" download="Keshav-Singh-CV.pdf" aria-label="Resume"
+        title="Resume" style="--c:var(--pb)"><svg>
+          <use href="#i-resume" />
+        </svg></a></div>
+    <button class="tbtn" id="themeToggle" type="button" aria-label="Toggle dark mode"><svg class="mo">
+        <use href="#i-moon" />
+      </svg><svg class="su">
+        <use href="#i-sun" />
+      </svg></button>
+    <a class="cta" href="#contact">Contact</a>
+    <i class="prog" aria-hidden="true"></i>
+  </nav>
+
+  <div id="fx" aria-hidden="true"></div>
+  <main id="main">
+    <header class="hero" id="home">
+      <div class="side sl" aria-hidden="true">
+        <div class="polaroid" style="--r:-6deg;--bg:var(--pc)"><span class="tape"></span>
+          <div class="pic"><i data-px="folder" data-s="9"></i></div>
+          <p>my projects</p>
+        </div>
+        <div class="postit" style="--r:4deg">to do:<br>ship it, then polish</div>
+      </div>
+      <div class="side sr" aria-hidden="true">
+        <div class="postit" style="--r:-4deg;--c:var(--pb)">now learning the MERN stack</div>
+        <div class="polaroid" style="--r:5deg;--bg:var(--pp)"><span class="tape"
+            style="background:rgba(188,200,243,.8)"></span>
+          <div class="pic"><i data-px="heart" data-s="8"></i></div>
+          <p>works on my machine</p>
+        </div>
+      </div>
+      <i class="spark" style="--c:var(--pink);left:9%;top:14%"></i><i class="spark"
+        style="--c:var(--blue);left:20%;top:78%;width:16px;height:16px"></i><i class="spark"
+        style="--c:var(--green);right:10%;top:12%"></i><i class="spark"
+        style="--c:var(--yel);right:21%;top:80%;width:28px;height:28px"></i><i class="spark"
+        style="--c:var(--red);left:5%;top:52%;width:14px;height:14px"></i><i class="spark"
+        style="--c:var(--pink);right:4%;top:50%;width:16px;height:16px"></i>
+      <div class="stage">
+        <span class="tag float f1" style="background:var(--pm);--r:-4deg">python &amp; java</span>
+        <span class="tag float f2" style="background:var(--pb);--r:3deg">the web stack</span>
+        <span class="tag float f3" style="background:var(--pc);--r:2deg">geospatial applications</span>
+        <span class="tag float f4" style="background:var(--pp);--r:-3deg">curious about AI</span>
+
+        <span class="hi">Hi There!!, I am</span>
+        <h1 class="namebox"><i></i><i></i><i></i><i></i>Keshav<br>Singh</h1>
+        <span class="status">Building things that ship, 📍 from Surat, India</span>
+        <p class="lead">I build small, useful things, from the backend to the interface.<b aria-hidden="true"></b></p>
+        <a class="btn" href="#projects">See my work</a>
+        <div class="socials"><a href="https://github.com/keshxvv21" target="_blank" rel="noopener" aria-label="GitHub"
+            title="GitHub" style="--c:var(--yel)"><svg>
+              <use href="#i-github" />
+            </svg></a><a href="https://www.linkedin.com/in/keshavsingh17/" target="_blank" rel="noopener"
+            aria-label="LinkedIn" title="LinkedIn" style="--c:var(--pink)"><svg>
+              <use href="#i-linkedin" />
+            </svg></a><a href="mailto:[keshavvsingh.dev@gmail.com]" aria-label="Email" title="Email"
+            style="--c:var(--green)"><svg>
+              <use href="#i-mail" />
+            </svg></a><a href="assets/cv/keshavsingh-updatedcv.pdf" download="keshavsingh-updatedcv.pdf"
+            aria-label="Resume" title="Resume" style="--c:var(--pb)"><svg>
+              <use href="#i-resume" />
+            </svg></a></div>
+        <p class="hint hand" aria-hidden="true">psst: drag the stickers around, and click the paper</p>
+        <div class="mob" aria-hidden="true"><span class="tag" style="background:var(--pm)">python &amp; java</span><span
+            class="tag" style="background:var(--pb);--r:2deg">the web stack</span><span class="tag"
+            style="background:var(--pc)">geospatial applications</span></div>
+      </div>
+    </header>
+
+    <div class="tape-band" style="--c:var(--yel);--r:-1.4deg" aria-hidden="true">
+      <div class="trk">
+        <div class="g"><span class="t">python</span><i class="pl"></i><span class="t">java</span><i class="pl"></i><span
+            class="t">web stack</span><i class="pl"></i><span class="t">geospatial applications</span><i
+            class="pl"></i><span class="t">space sciences</span><i class="pl"></i><span class="t">AI & ML</span><i
+            class="pl"></i><span class="t">python</span><i class="pl"></i><span class="t">java</span><i
+            class="pl"></i><span class="t">web stack</span><i class="pl"></i><span class="t">geospatial
+            applications</span><i class="pl"></i><span class="t">space sciences</span><i class="pl"></i><span
+            class="t">AI & ML</span><i class="pl"></i></div>
+        <div class="g"><span class="t">python</span><i class="pl"></i><span class="t">java</span><i class="pl"></i><span
+            class="t">web stack</span><i class="pl"></i><span class="t">geospatial applications</span><i
+            class="pl"></i><span class="t">space sciences</span><i class="pl"></i><span class="t">AI & ML</span><i
+            class="pl"></i><span class="t">python</span><i class="pl"></i><span class="t">java</span><i
+            class="pl"></i><span class="t">web stack</span><i class="pl"></i><span class="t">geospatial
+            applications</span><i class="pl"></i><span class="t">space sciences</span><i class="pl"></i><span
+            class="t">AI & ML</span><i class="pl"></i></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap about">
+        <div class="polaroid" style="--r:-5deg"><span class="tape"></span>
+          <div class="pic"><i data-px="mac" data-s="9"></i></div>
+          <p>hello, world</p>
+        </div>
+        <div class="words">
+          <span class="k">what's up</span>
+          <p class="big">B.Tech CS student who gets a little too excited about making complicated things feel simple. I
+            care about the <mark>small details</mark>, and I like building things that are <mark>simple to use</mark>.
+          </p>
+          <div class="chips">
+            <span class="chip" style="background:var(--blue);--r:-3deg">Python</span><span class="chip"
+              style="background:var(--pink);--r:2deg">Java</span>
+            <span class="chip" style="background:var(--green);--r:-1deg">MERN stack</span><span class="chip"
+              style="background:#121212;--r:3deg">SQL</span>
+            <span class="chip" style="background:var(--red);--r:-2deg">Geospatial Applications</span>
+          </div>
+          <p class="into"><span class="hand">interested in</span><span class="mini">UI/UX Design</span><span
+              class="mini">Space Sciences</span><span class="mini">AI</span><span class="mini">Machine
+              Learning</span><span class="mini">Web Development</span><span class="mini">Frontend Development</span></p>
+        </div>
+        <div class="polaroid" style="--r:4deg;--bg:var(--pc)"><span class="tape"
+            style="background:rgba(247,187,208,.8)"></span>
+          <div class="pic"><i data-px="floppy" data-s="9"></i></div>
+          <p>save often</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="sq" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="xMidYMid slice">
+        <path pathLength="1"
+          d="M0 20 Q30 2 60 20 T120 20 T180 20 T240 20 T300 20 T360 20 T420 20 T480 20 T540 20 T600 20 T660 20 T720 20 T780 20 T840 20 T900 20 T960 20 T1020 20 T1080 20 T1140 20 T1200 20"
+          style="stroke:var(--pink)" />
+      </svg><span class="sp" style="background:var(--pink)"></span></div>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="pix">Featured works</h2>
+          <p class="hand">the things I've built so far</p>
+        </div>
+        <div class="pgrid">
+          <article class="pt" style="--tb:var(--ink);--tc:var(--paper);--lb:var(--blue)"><span class="lab">Web
+              app</span><span class="when">2026, in progress</span>
+            <h3>NavSetu</h3>
+            <p>A startup-friendly public procurement platform built for Smart India Hackathon 2026. Departments post a
+              problem, run a small pilot with a startup, and convert it into a contract.</p>
+            <div class="stack"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+            <div class="plinks"><a class="go" href="https://github.com/keshxvv21/Navsetu" target="_blank"
+                rel="noopener">View on GitHub ↗</a></div>
+          </article>
+          <article class="pt" style="--tb:var(--yel);--tc:#121212;--lb:var(--ink)"><span class="lab">AI tool</span><span
+              class="when">2026</span>
+            <h3>DocuMind</h3>
+            <p>A local study assistant: upload PDF or TXT notes, ask a question, and get an answer drawn only from your
+              own documents. No API keys, runs on your machine.</p>
+            <div class="stack"><span>Python</span><span>Flask</span><span>FAISS</span><span>Ollama</span></div>
+            <div class="plinks"><a class="go" href="https://github.com/keshxvv21/DocuMind" target="_blank"
+                rel="noopener">View on GitHub ↗</a></div>
+          </article>
+          <article class="pt" style="--tb:var(--pb);--tc:#121212;--lb:var(--pink)"><span class="lab">Desktop
+              app</span><span class="when">2026</span>
+            <h3>Neo YouTube Downloader</h3>
+            <p>A desktop app for downloading YouTube videos, built with Python and yt-dlp. It previews the title and
+              thumbnail first, then saves video, audio or whole playlists with live progress, in a neo-brutalist look.
+            </p>
+            <div class="stack"><span>Python</span><span>yt-dlp</span><span>Tkinter</span><span>FFmpeg</span></div>
+            <div class="plinks"><a class="go" href="https://github.com/keshxvv21/Neo-Youtube-Downloader" target="_blank"
+                rel="noopener">View on GitHub ↗</a></div>
+          </article>
+          <article class="pt" style="--tb:var(--pm);--tc:#121212;--lb:var(--green)"><span
+              class="lab">Visualization</span><span class="when">2026</span>
+            <h3>APOGEE</h3>
+            <p>A real-time 3D orbital tracking interface that shows live crewed stations and orbital assets, using D3.js
+              and SGP4 propagation.</p>
+            <div class="stack"><span>JavaScript</span><span>D3.js</span><span>SGP4</span></div>
+            <div class="plinks"><a class="go" href="https://github.com/keshxvv21/APOGEE" target="_blank"
+                rel="noopener">View on GitHub ↗</a><a class="go" href="https://apogee-five-eta.vercel.app"
+                target="_blank" rel="noopener">Live demo ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="tape-band rev" style="--c:var(--pb);--r:1.2deg" aria-hidden="true">
+      <div class="trk">
+        <div class="g"><span class="t">NavSetu</span><i class="pl"></i><span class="t">DocuMind</span><i
+            class="pl"></i><span class="t">Neo YouTube Downloader</span><i class="pl"></i><span
+            class="t">APOGEE</span><i class="pl"></i><span class="t">NavSetu</span><i class="pl"></i><span
+            class="t">DocuMind</span><i class="pl"></i><span class="t">Neo YouTube Downloader</span><i
+            class="pl"></i><span class="t">APOGEE</span><i class="pl"></i></div>
+        <div class="g"><span class="t">NavSetu</span><i class="pl"></i><span class="t">DocuMind</span><i
+            class="pl"></i><span class="t">Neo YouTube Downloader</span><i class="pl"></i><span
+            class="t">APOGEE</span><i class="pl"></i><span class="t">NavSetu</span><i class="pl"></i><span
+            class="t">DocuMind</span><i class="pl"></i><span class="t">Neo YouTube Downloader</span><i
+            class="pl"></i><span class="t">APOGEE</span><i class="pl"></i></div>
+      </div>
+    </div>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="pix">Skills</h2>
+          <p class="hand">the tools I reach for</p>
+        </div>
+        <div class="skgrid">
+          <div class="skgroup">
+            <h3>Languages</h3>
+            <ul class="sklist">
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Java</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Python</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg"
+                    alt="" width="40" height="40" loading="lazy"
+                    onerror="this.style.display='none'"></span><b>JavaScript</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>HTML</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>CSS</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg" alt="" width="40"
+                    height="40" loading="lazy" onerror="this.style.display='none'"></span><b>C</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>PHP</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg"
+                    alt="" width="40" height="40" loading="lazy"
+                    onerror="this.style.display='none'"></span><b>TypeScript</b></li>
+            </ul>
+            <p class="extra"><span class="hand">also working with</span><span class="mini">SQL</span></p>
+          </div>
+          <div class="skgroup">
+            <h3>Databases</h3>
+            <ul class="sklist">
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>MongoDB</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg"
+                    alt="" width="40" height="40" loading="lazy"
+                    onerror="this.style.display='none'"></span><b>PostgreSQL</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>MySQL</b></li>
+            </ul>
+          </div>
+          <div class="skgroup">
+            <h3>Frameworks &amp; libraries</h3>
+            <ul class="sklist">
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>React</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/express/express-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Express</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Node.js</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Flask</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/d3js/d3js-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>D3.js</b></li>
+            </ul>
+          </div>
+          <div class="skgroup">
+            <h3>AI &amp; machine learning</h3>
+            <p class="extra"><span class="mini">Hugging Face</span><span class="mini">Ollama</span><span
+                class="mini">FAISS</span></p>
+          </div>
+          <div class="skgroup">
+            <h3>Tools</h3>
+            <ul class="sklist">
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Git</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>GitHub</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>VS Code</b></li>
+              <li class="sk"><span class="logo"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg" alt=""
+                    width="40" height="40" loading="lazy" onerror="this.style.display='none'"></span><b>Figma</b></li>
+            </ul>
+            <p class="extra"><span class="hand">also use</span><span class="mini">Canva</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sq" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="xMidYMid slice">
+        <path pathLength="1"
+          d="M0 20 Q30 2 60 20 T120 20 T180 20 T240 20 T300 20 T360 20 T420 20 T480 20 T540 20 T600 20 T660 20 T720 20 T780 20 T840 20 T900 20 T960 20 T1020 20 T1080 20 T1140 20 T1200 20"
+          style="stroke:var(--green)" />
+      </svg><span class="sp" style="background:var(--green)"></span></div>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="pix">Experience</h2>
+          <p class="hand">where I've worked and what I've researched</p>
+        </div>
+        <div class="notes">
+          <article class="note xp" style="--c:var(--pb)"><img class="xlogo" src="assets/images/geostrata-logo.png"
+              alt="The Geostrata Foundation logo" width="260" height="72">
+            <h3>Research Intern, Covering ISRO</h3>
+            <p>A sub-organisation of The Geostrata Foundation.</p><time>Aug 2026 to present</time>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="tape-band" style="--c:var(--pp);--r:-1deg" aria-hidden="true">
+      <div class="trk">
+        <div class="g"><span class="t">let's talk</span><i class="pl"></i><span class="t">say hello</span><i
+            class="pl"></i><span class="t">open to ideas</span><i class="pl"></i><span class="t">let's talk</span><i
+            class="pl"></i><span class="t">say hello</span><i class="pl"></i><span class="t">open to ideas</span><i
+            class="pl"></i></div>
+        <div class="g"><span class="t">let's talk</span><i class="pl"></i><span class="t">say hello</span><i
+            class="pl"></i><span class="t">open to ideas</span><i class="pl"></i><span class="t">let's talk</span><i
+            class="pl"></i><span class="t">say hello</span><i class="pl"></i><span class="t">open to ideas</span><i
+            class="pl"></i></div>
+      </div>
+    </div>
+
+    <section id="cv">
+      <div class="wrap lets">
+        <span class="smile"><i data-px="smile" data-s="10"></i></span>
+        <h2 class="pix">Let's talk</h2>
+        <div class="talk">
+          <div class="card"><span class="tape"></span>
+            <p>B.Tech in Computer Science &amp; Engineering. Full-stack development with Python, Java and the web stack,
+              and research work covering ISRO.</p>
+            <div class="row"><a class="btn" href="assets/cv/Keshav-Singh-CV.pdf" download="Keshav-Singh-CV.pdf">Download
+                CV</a><a class="btn alt" href="assets/cv/Keshav-Singh-CV.pdf" target="_blank" rel="noopener">View CV</a>
+            </div>
+          </div>
+          <form class="card form" id="contact" novalidate><span class="tape"></span>
+            <label>Name<input name="name" autocomplete="name" aria-describedby="e-name" required><small class="err"
+                id="e-name"></small></label>
+            <label>Email<input name="email" type="email" autocomplete="email" aria-describedby="e-email" required><small
+                class="err" id="e-email"></small></label>
+            <label>Message<textarea name="message" rows="4" aria-describedby="e-message" required></textarea><small
+                class="err" id="e-message"></small></label>
+            <button class="btn" type="submit">Send message</button>
+            <output class="fmsg" role="status"></output>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="flogo" href="#home" aria-label="Back to top"><svg viewBox="0 0 184 107" width="52" height="30">
+          <use href="#i-logo" />
+        </svg></a>
+      <div class="links"><a href="https://github.com/keshxvv21" target="_blank" rel="noopener"><svg>
+            <use href="#i-github" />
+          </svg>GitHub</a><a href="https://www.linkedin.com/in/keshavsingh17/" target="_blank" rel="noopener"><svg>
+            <use href="#i-linkedin" />
+          </svg>LinkedIn</a><a href="mailto:keshavsingh6495@gmail.com"><svg>
+            <use href="#i-mail" />
+          </svg>Email</a><a href="#home">Back to top</a></div>
+      <p>&copy; 2026 Keshav Singh. Based in Surat, India.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+
+</html>

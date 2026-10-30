@@ -1,0 +1,21 @@
+/* Dark theme overrides + surfaces that stay light (paper, stickers) in dark mode. */
+
+:root[data-theme="dark"] {
+  --paper: #15140F;
+  --ink: #F1EEE5;
+  --card: #211F1A;
+  --line: rgba(255,255,255,.06);
+  color-scheme: dark;
+}
+
+.polaroid,
+.note,
+.postit,
+.card,
+.tag,
+mark,
+footer a:hover,
+.dots a,
+.socials a {
+  color: #121212;
+}

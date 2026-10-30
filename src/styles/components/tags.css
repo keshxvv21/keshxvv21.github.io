@@ -1,0 +1,37 @@
+/* Small label shapes: torn-paper tags, coloured chips, outlined mini tags. */
+
+.tag {
+  display: inline-block;
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  padding: 7px 18px;
+  clip-path: var(--torn);
+  transform: rotate(var(--r,-3deg));
+}
+
+.chip {
+  display: inline-block;
+  font: 600 14px var(--sans);
+  color: #fff;
+  padding: 6px 16px;
+  box-shadow: 3px 3px 0 var(--ink);
+  border: 1.5px solid var(--ink);
+  transform: rotate(var(--r,-2deg));
+  transition: transform .35s var(--ease);
+}
+
+.chip:hover {
+  transform: rotate(0) translateY(-2px);
+}
+
+.mini {
+  display: inline-block;
+  font: 600 13px var(--sans);
+  padding: 3px 12px;
+  margin: 0 8px 8px 0;
+  border: 1.5px solid var(--ink);
+  background: var(--card);
+  transform: rotate(var(--r,-1deg));
+}

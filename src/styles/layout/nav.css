@@ -1,0 +1,118 @@
+/* Sticky top bar, social dots, scroll-progress line. */
+
+.top {
+  position: sticky;
+  top: 12px;
+  z-index: 30;
+  max-width: 1180px;
+  margin: 12px auto 0;
+  width: calc(100% - clamp(24px,6vw,64px));
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  display: flex;
+  align-items: stretch;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.top a.l {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  transition: background .35s var(--ease);
+}
+
+.top a.l::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--ink);
+}
+
+.top a.l:hover {
+  background: var(--pc);
+}
+
+.top a.l.active {
+  background: var(--yel);
+}
+
+.top .sp {
+  flex: 1;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.dots a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  transition: transform .35s var(--ease);
+  display: grid;
+  place-items: center;
+  background: var(--c);
+}
+
+.dots a:hover {
+  transform: scale(1.25);
+}
+
+.dots svg {
+  width: 14px;
+  height: 14px;
+}
+
+.top .cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px;
+  padding: 0 14px;
+  border: 1.5px solid var(--ink);
+  background: var(--card);
+}
+
+.top .cta:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.top a.l:hover,
+.top a.l.active {
+  color: #121212;
+}
+
+@media(max-width:760px) {
+  .dots,
+  .top .sp {
+    display: none;
+  }
+
+  .top {
+    overflow-x: auto;
+  }
+
+  .top a.l {
+    padding: 10px 12px;
+  }
+}
+
+.prog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg,var(--pink),var(--yel),var(--green));
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  will-change: transform;
+  pointer-events: none;
+}

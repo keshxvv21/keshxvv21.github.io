@@ -1,0 +1,29 @@
+/* Scroll reveal and heading wipe. */
+
+.rv {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .55s var(--ease),transform .55s var(--ease);
+}
+
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+.wipe {
+  display: block;
+  overflow: hidden;
+  padding: .08em 0;
+  margin: -.08em 0;
+}
+
+.wipe>span {
+  display: block;
+  transform: translateY(108%);
+  transition: transform .75s var(--ease) .04s;
+}
+
+.in .wipe>span {
+  transform: none;
+}

@@ -1,0 +1,89 @@
+/* Skills: grouped logo tiles. */
+
+.skgrid {
+  display: grid;
+  gap: 12px 64px;
+  margin-top: 8px;
+}
+
+@media(min-width:900px) {
+  .skgrid {
+    grid-template-columns: 1.35fr 1fr;
+  }
+}
+
+.skgroup {
+  margin-bottom: 34px;
+}
+
+.skgroup h3 {
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.sklist {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 14px;
+}
+
+.sk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 84px;
+  transform: rotate(var(--r,0deg));
+  transition: transform .4s var(--ease);
+}
+
+.sk:nth-child(3n+1) {
+  --r: -2deg;
+}
+
+.sk:nth-child(3n+2) {
+  --r: 1.5deg;
+}
+
+.sk:nth-child(3n) {
+  --r: -1deg;
+}
+
+.sk:hover {
+  transform: rotate(0) translateY(-5px);
+}
+
+.sk .logo {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.sk .logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.sk b {
+  font: 600 12px var(--sans);
+  text-align: center;
+}
+
+.extra {
+  margin-top: 20px;
+}
+
+.extra .hand {
+  font-size: 22px;
+  margin-right: 12px;
+  margin-bottom: 6px;
+}

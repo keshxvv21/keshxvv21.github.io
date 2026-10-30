@@ -1,0 +1,25 @@
+/* Section heading (big pixel title + handwritten note). */
+
+h2.pix {
+  font-family: var(--pix);
+  font-weight: 400;
+  font-size: clamp(56px,10vw,128px);
+  line-height: .85;
+  text-transform: uppercase;
+  letter-spacing: .005em;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 14px 28px;
+  margin-bottom: 44px;
+}
+
+.head .hand {
+  font-size: 24px;
+  max-width: 28ch;
+  line-height: 1.2;
+  padding-bottom: 6px;
+}

@@ -1,0 +1,15 @@
+/* Experience: logo note card. */
+
+.xp {
+  flex: 0 1 420px;
+  max-width: 420px;
+}
+
+.xlogo {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 16px;
+  border: 1.5px solid #121212;
+}

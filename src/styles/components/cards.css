@@ -1,0 +1,30 @@
+/* Taped paper cards (used by the CV card and the contact form). */
+
+.card {
+  position: relative;
+  max-width: 540px;
+  margin: 40px auto 0;
+  padding: 34px 30px;
+  background: var(--pc);
+  text-align: left;
+  transform: rotate(-1deg);
+  box-shadow: 5px 6px 0 rgba(18,18,18,.15);
+}
+
+.card .tape {
+  background: rgba(188,200,243,.8);
+}
+
+.card p {
+  font-family: var(--hand);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 22px;
+}
+
+.card .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
